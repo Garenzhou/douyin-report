@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 配置文件（包含敏感信息）
+config/config.yaml
+
+# 日志文件
+logs/
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~
+
+# 测试文件
+debug_*.py
+test_*.py
+demo_*.py
+simple_*.py
+debug_db.txt
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.codeartsdoer/
+.codemate/
+.idea/
+*.iml

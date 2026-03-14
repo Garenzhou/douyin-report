@@ -1,0 +1,16 @@
+# 依赖
+# 安装: pip install -r requirements.txt
+
+# 核心依赖
+f2>=0.0.1
+pyyaml>=6.0
+requests>=2.28.0
+
+# 语音识别
+openai>=1.0.0
+
+# 音视频处理
+ffmpeg-python>=0.2.0
+
+# 可选依赖
+# pillow>=10.0.0  # 图片处理（如需要缩略图）

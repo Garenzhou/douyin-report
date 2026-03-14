@@ -1,0 +1,39 @@
+# Douyin Report 配置文件
+
+# Cookie 配置（必需，用于下载视频）
+# 从浏览器开发者工具中获取
+cookie: ""
+
+# 下载路径配置
+# 留空则使用系统 Downloads/douyin-report
+download_path: ""
+
+# 增量下载配置
+incremental:
+  enabled: true  # 是否启用增量下载
+
+# 要跟踪的主播列表
+# 配置格式：
+#streamers:
+#- url: https://www.douyin.com/user/MS4wLjABAAAA9NHh9QOOHhDveY1gwVs9TFXipzfM3X09-_DEzvxvnjOlef7AtNdJS2CEopQU7pwC
+#- url: https://www.douyin.com/user/MS4wLjABAAAA0d9i_1KUorZmIsmS2m81niCmO7-JbWLIHfpfwW9OdNM?from_tab_name=main&vid=7616727646084665193
+
+streamers: []
+
+# 文案提取配置（需要硅基流动 API）
+transcript:
+  enabled: true
+  api_key: ""  # 硅基流动 API 密钥（或设置环境变量 API_KEY）
+  api_base_url: "https://api.siliconflow.cn/v1"
+  model: "FunAudioLLM/SenseVoiceSmall"
+
+# 报告配置
+report:
+  format: "markdown"  # markdown, html, json
+  include_metadata: true
+  group_by_date: true
+  include_summary: true
+
+# 其他设置
+max_retries: 3
+timeout: 10
